@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #2c3e50;
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 80px;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2c3e50;
+            color: #ecf0f1;
+            height: 100px; /* Further reduced height */
+            padding: 0 50px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #2c3e50;
+            color: #ecf0f1;
+            height: 60px; /* Further reduced height */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            font-size: 1.4rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 135px 0;
+            text-align: left;
+        }
+
+        .leftsection {
+            width: 45%;
+            font-size: 2rem;
+        }
+
+        .buttons {
+            padding: 45px 0;
+        }
+
+        .btns {
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            background: #8bb0d5;
+            color: #fff;
+            border-radius: 7px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .rightsection img {
+            width: 90%;
+        }
+
+        .secondsection, .about, .services, .contact {
+            max-width: 80vw;
+            margin: auto;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .box {
+            background: #fff;
+            margin: 56px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .vertical {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .vertical img {
+            width: 99px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+    .secondsection span {
+        font-size: 1.8rem; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        background-color: #ecf0f1; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+    }
+        
+
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftsection {
+                width: 80%;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 0 50px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .vertical {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .vertical img {
+                margin: 0 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .firstsection {
+                margin: 80px 0;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            nav a:hover {
+                font-size: 1.2rem;
+            }
+
+            .btns {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .about h2, .services h2, .contact h2 {
+                font-size: 1.5rem;
+            }
+
+            .secondsection h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Rishuket's Portfolio</a>
+            <ul>
+                <li><a href="#contact">Contact me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span style="color:#e74c3c;">Rishuket</span>.
+                <div>I am learning Web Development.</div>
+                <div>I love it.</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btns" onclick="window.location.href='Rishuket_Kumar-Singh.pdf'">Resume</button>
+                    <button class="btns" onclick="window.location.href='https://github.com/RishuketSingh'">Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="vm.png">
+            </div>
+        </section>
+        <hr style="border:0; background:#3498db; height:1.2px; margin:40px 84px;">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm Rishuket, a passionate web developer with a love for creating dynamic and responsive websites.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>My Services</h2>
+            <p>I offer web development services, including front-end development, responsive design, and interactive web pages.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <a href="rishuadtp@gmail.com">rishuadtp@gmail.com</a>.</p>
+        </section>
+        <section class="secondsection">
+            <span style="color:#7f8c8d;">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="html.png" alt="HTML Developer">
+                    <div>
+                        <div style="font-weight:bold; font-size:1.2rem;">HTML Developer</div>
+                        <div style="font-size:1rem;">Developed and maintained the HTML structure for various websites.</div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="css.png" alt="CSS Developer">
+                    <div>
+                        <div style="font-weight:bold; font-size:1.2rem;">CSS Developer</div>
+                        <div style="font-size:1rem;">Designed and implemented CSS styles.</div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="js.png" alt="JavaScript Developer">
+                    <div>
+                        <div style="font-weight:bold; font-size:1.2rem;">JavaScript Developer</div>
+                        <div style="font-size:1rem;">Created dynamic and interactive web pages using JavaScript.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Rishuket's Developer Portfolio. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        new Typed('#element', {
+            strings: ['Web Developer', 'HTML', 'CSS', 'JS'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
